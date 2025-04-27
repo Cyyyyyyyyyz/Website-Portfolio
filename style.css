@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    overflow-y: auto;
+    background-color: #FFF2D7;
+    color: #6D4C41;
+    font-size: large;
+
+
+
+
+    
+}
+
+header {
+    position: relative;
+    padding: 150px 20px; 
+    overflow: hidden;
+}
+
+
+.slideshow2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow2 15s infinite;
+}
+
+@keyframes slideshow2 {
+    0% { background-image: url('header images/1.jpg'); }
+    33% { background-image: url('header images/WIDECAT.jpg'); }
+    66% { background-image: url('header images/3.jpg'); }
+    100% { background-image: url('header images/slideshow-2.jpg'); }
+}
+
+/* NAV */
+
+.navigation ul {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F98866;
+  
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navigation li {
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* home */
+
+.main-content{
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    font-size: medium;
+    
+}
+
+.image{
+
+    
+    margin-left: 30%;
+    flex: 1 1 100px;
+    border-style: solid;
+    border-radius: 10%;
+    box-shadow: 5px 10px 10px #6b3c2e;
+    
+}
+.text-content{
+
+    padding: 10px 50px 10px 50px ;
+    border-style: solid;
+    border-radius: 10%;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    box-shadow: 5px 10px 10px #6b3c2e;
+}
+.name {
+    font-size: medium;
+    margin-top: 10%;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    
+}
+
+.disc, .quote, .address, .contact {
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+/* EDUC BACKGROUND */
+.seconddivision{
+
+    display: flex;
+    justify-content: center;    
+    font-size: medium;
+    
+}
+.educdivision{
+
+    padding-right: 15%;
+}
+
+.educ-background {
+    margin-top: 5%;
+    text-align: center;
+    font-size: medium;
+    padding: 50px 20px;
+
+    padding:  50px 10px 50px ;
+    border-style: solid;
+    border-radius: 10%;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    box-shadow: 5px 10px 10px #6b3c2e;
+    
+}
+.hobbies{
+
+    margin-top: 5%;
+    text-align: center;
+    font-size: medium;
+    padding: 50px 20px;
+
+    padding:  50px 10px 50px ;
+    border-style: solid;
+    border-radius: 10%;
+    border-left: 1px;
+    border-right: 1px;
+    border-top: 1px;
+    box-shadow: 5px 10px 10px #6b3c2e;
+}
+
+.home,
+.educ-background h3,
+.hobbies h3,
+.skills h3,
+.experience h3 {
+    font-size: xx-large;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.hobbies ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: medium;
+}
+
+.college, .senior, .junior, .elementary {
+    line-height: .5;
+    margin-bottom: 5%;
+    
+
+}
+footer {
+    padding: 5px;
+    background-color: #F98866;
+    color: #FFFFFF ;
+    width: 100%;
+    text-align: center;
+    position: relative; 
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 100px 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navigation li {
+        padding: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image {
+        position: static;
+        transform: scale(1);
+        margin: 20px auto;
+    }
+
+    .educ-background {
+        padding: 20px;
+    }
+
+    .home, .educ-background h3, .hobbies h3, .skills h3, .experience h3 {
+        font-size: large;
+    }
+    .seconddivision{
+        flex-direction: column;
+        
+    }
+    .educ-background{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 70px 10px;
+    }
+
+    .home {
+        font-size: medium;
+    }
+
+    .main-content {
+        font-size: smaller;
+    }
+
+   
+   
+    footer {
+        font-size: small;
+    }
+}

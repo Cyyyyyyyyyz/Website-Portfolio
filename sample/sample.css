@@ -1,0 +1,36 @@
+* {
+     box-sizing: border-box;
+   }
+   
+   body {
+     margin: 0;
+     padding: 0;
+     height: 100vh; /* Makes the body fill the whole viewport */
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+   }
+   
+   .container {
+     display: flex; /* Enables Flexbox */
+     justify-content: center; /* Centers the divs horizontally */
+     align-items: center; /* Centers the divs vertically */
+     height: 100vh; /* Take full viewport height */
+     gap: 20px; /* Adds space between the two divs */
+   }
+   
+   .box1, .box2 {
+     background-color: #3498db;
+     color: white;
+     padding: 20px;
+     border-radius: 5px;
+     width: 200px;
+     text-align: center;
+   }
+   
+   @media (max-width: 768px) {
+     .container {
+       flex-direction: column; /* Stack divs vertically on smaller screens */
+       gap: 10px; /* Reduce the gap between the divs */
+     }
+   }
+   

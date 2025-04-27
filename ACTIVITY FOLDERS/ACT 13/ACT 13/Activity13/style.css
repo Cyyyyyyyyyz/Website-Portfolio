@@ -1,0 +1,64 @@
+body{
+    font-family: helvetica;
+    background-color: #f4f4f9;
+    text-align: center;
+    
+}
+
+h1{
+    color: BLACK;
+    
+}
+
+
+#namesInput{
+
+    width: 500px;
+    height: 500px;
+}
+.container{
+
+    margin-top: 5%;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(150, 161, 161);
+    border-radius: 30px;
+}
+
+#pickedName{
+
+    font-size: xx-large;
+}
+
+
+
+label{
+
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+input[type = "text"]{
+    padding: 10px;
+    font-size: 1em;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button{
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(72, 95, 72);
+
+}
+
+button:hover{
+    
+}
