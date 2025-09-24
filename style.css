@@ -47,6 +47,8 @@ header {
     33% { background-image: url('header images/shared image (2).jpg'); }
     66% { background-image: url('header images/shared image (3).jpg'); }
     100% { background-image: url('header images/shared image.jpg'); }
+
+    
 }
 
 .navigation ul {
@@ -236,6 +238,8 @@ footer {
     border-radius: 10px;
     height: 20px;
     margin: 0 auto;
+
+
 }
 
 .progress-bar {
@@ -247,6 +251,8 @@ footer {
     line-height: 20px;
     font-weight: bold;
     font-size: smaller;
+
+    
 }
 
 @media (max-width: 1024px) {
@@ -454,7 +460,7 @@ footer {
     .ACTIVITY11, .ACTIVITY12, .ACTIVITY13 {
       width: 90%;
       margin-bottom: 2rem;
-      margin-right: 0 !important;
+      margin-right: 0;
     }
 
   
